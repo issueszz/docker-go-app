@@ -33,7 +33,7 @@ func TestHealthCheck(t *testing.T) {
 
 	//s := fmt.Sprintf("DBPORT=%s", port)
 	resource, err := pool.RunWithOptions(&dockertest.RunOptions{
-		Repository:   "goapp",
+		Repository:   "docker-go-app",
 		Tag:          "latest",
 		Name:         "app",
 		ExposedPorts: []string{"8080"},
